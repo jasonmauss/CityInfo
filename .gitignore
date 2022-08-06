@@ -4,3 +4,4 @@
 
 *.suo
 /CityInfo.API/CityInfo.API/obj
+*.v2
