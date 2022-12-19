@@ -5,3 +5,7 @@
 *.suo
 /CityInfo.API/CityInfo.API/obj
 *.v2
+/CityInfo.API/CityInfo.API/bin/Debug/net6.0
+/CityInfo.API/.vs/CityInfo.API/FileContentIndex
+/CityInfo.API/.vs/CityInfo.API/v17
+/CityInfo.API/.vs/ProjectEvaluation
