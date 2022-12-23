@@ -28,7 +28,7 @@ namespace CityInfo.API.Controllers
             pageSize = Math.Min(pageSize, maxCitiesPageSize);
             var (cityEntities, paginationMetadata) = await _cityInfoRepository.GetCitiesAsync(name, searchQuery, pageNumber, pageSize);
 
-            Response.Headers.Add("X-Pagination", JsonSerializer.Serialize(paginationMetadata))
+            Response.Headers.Add("X-Pagination", JsonSerializer.Serialize(paginationMetadata));
             return Ok(_mapper.Map<IEnumerable<CityWithoutPointsOfInterestDto>>(cityEntities));
         }
 
