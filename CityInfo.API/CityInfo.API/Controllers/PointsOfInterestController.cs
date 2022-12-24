@@ -9,9 +9,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CityInfo.API.Controllers
 {
-    [Route("api/cities/{cityId}/pointsofinterest")]
+    [Route("api/v{version:apiVersion}/cities/{cityId}/pointsofinterest")]
     [ApiController]
-    [Authorize(Policy = "MustBeFromAntwerp")]
+    //[Authorize(Policy = "MustBeFromAntwerp")]
+    [ApiVersion("2.0")]
     public class PointsOfInterestController : ControllerBase
     {
         private readonly ILogger<PointsOfInterestController> _logger;
